@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu>
+	<category name="Pizzas">
+		<item>
+			<name>Tomato &amp; Cheese</name>
+			<price>
+				<large>975</large>
+				<small>550</small>
+			</price>
+		</item>
+		<item>
+			<name>Onions</name>
+			<price>
+				<large>1085</large>
+				<small>685</small>
+			</price>
+		</item>
+		<item>
+			<name>Peppers</name>
+			<price>
+				<large>1085</large>
+				<small>685</small>
+			</price>
+		</item>
+	</category>
+	<category name="Specialty Pizzas">
+		<item>
+			<name>Three Aces Special</name>
+			<price>
+				<large>1580</large>
+				<small>980</small>
+			</price>
+		</item>
+		<item>
+			<name>Mediterranean</name>
+			<price>
+				<large>1580</large>
+				<small>980</small>
+			</price>
+		</item>
+		<item>
+			<name>Vegetarian</name>
+			<price>
+				<large>1580</large>
+				<small>980</small>
+			</price>
+		</item>
+	</category>
+	<category name="Special Dinners">
+		<item>
+			<name>Chicken Wing Dinner</name>
+			<price>975</price>
+		</item>
+		<item>
+			<name>Gyro Plate</name>
+			<price>975</price>
+		</item>
+		<item>
+			<name>Chicken Finger Plate</name>
+			<price>975</price>
+		</item>
+	</category>
+	<category name="Side orders">
+		<item>
+			<name>Onion Rings</name>
+			<price>
+				<large>295</large>
+				<small>260</small>
+			</price>
+		</item>
+		<item>
+			<name>French Fries</name>
+			<price>
+				<large>265</large>
+				<small>225</small>
+			</price>
+		</item>
+		<item>
+			<name>Spicy Fries</name>
+			<price>
+				<large>295</large>
+				<small>260</small>
+			</price>
+		</item>
+	</category>
+	<category name="Salads">
+		<item>
+			<name>Garden</name>
+			<price>
+				<large>450</large>
+				<small>350</small>
+			</price>
+		</item>
+		<item>
+			<name>Greek</name>
+			<price>
+				<large>550</large>
+				<small>450</small>
+			</price>
+		</item>
+		<item>
+			<name>Grilled Chicken</name>
+			<price>
+				<large>595</large>
+				<small>495</small>
+			</price>
+		</item>
+	</category>
+</menu>
