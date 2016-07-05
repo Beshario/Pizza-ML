@@ -3,7 +3,7 @@ echo "
 <!DOCTYPE html>
 <html lang='en'>
 <head>";
-#include('header-content.php');
+include('header-content.php');
 echo "
 </head>
 <body>";
