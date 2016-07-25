@@ -1,18 +1,23 @@
-<?php
-echo "
+
+
 <!DOCTYPE html>
 <html lang='en'>
-<head>";
+<head>
 
+<?
 include('header-content.php');
-
-echo "
-</head>
-<body>";
-
-include('content.php');
-
-echo "
-</body>
-</html> ";
 ?>
+
+
+</head>
+<body>
+<h1>CART</h1>
+
+<?
+showcart();
+?>
+
+
+</body>
+</html> 
+
