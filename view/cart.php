@@ -15,8 +15,8 @@ include('header-content.php');
 
 <?
 showcart();
+    
 ?>
-
 
 </body>
 </html> 

@@ -1,18 +1,18 @@
-<?php
-echo "
+
 <!DOCTYPE html>
 <html lang='en'>
-<head>";
 
+<?php
 include('header-content.php');
-
-echo "
-</head>
-<body>";
 
 include('content.php');
 
-echo "
-</body>
-</html> ";
 ?>
+ 
+
+    
+
+    
+  
+</body>
+</html>

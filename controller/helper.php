@@ -7,10 +7,8 @@ function showCart(){
 ?>
 <form action="index.php?go=cart" method="post">
 	<table>
-		<pre>
 				<?
-				print_r ($_SESSION["cart"]);
-				echo '</pre>';
+				//print_r ($_SESSION["cart"]);
 				foreach ($_SESSION["cart"] as $i=>$item){
 				
 					$ty = $item['type'];
@@ -25,7 +23,7 @@ function showCart(){
 						<?= $ty ?> :
 						<?= $nm ?> :
 						<?= $ch ?> :
-						<?= $pr ?> :
+						<?= ($pr/100) ?> :
 						<input type='hidden' name="update[<?= $i ?>][type]" value="<?= $ty ?>">
 						<input type='hidden' name="update[<?= $i ?>][name]" value="<?= $nm ?>">
 						<input type='hidden' name="update[<?= $i ?>][choice]" value="<?= $ch ?>">
@@ -33,12 +31,14 @@ function showCart(){
 						<a href="index.php?go=cart&remove=True&id=<?= $i ?>">remove</a></td><br>
 					<?
 				}
+        $total = getCartTotal();
 				?>
 				<input type="submit" value="Update"></td>
 
 			</table>
 		</form>
-		<div><a href="threeaces.php?go=checkout">Check Out</a></div>
+<div>Your Total Due at the store is: <?= ($total) ?>$</div>
+		<div><a href="index.php?go=checkout">Check Out</a></div>
 		<?
 	} else {
 					  
@@ -46,6 +46,7 @@ function showCart(){
 		<h2>Cart is Empty</h2>
 		<?
 	}
+    echo'<div><a href="index.php">Keep Ordering</a></div>';
 }
 ?>
 
@@ -57,10 +58,10 @@ function getCartTotal() {
     }
     $total = 0.00;
     foreach ($_SESSION["cart"] as $item) {
-        $price = $item["price"];
-        $total += intval($price[0]) * $item["quantity"];
-    }
-    return $total;
+        $price = $item["price"]; //print $price;
+        $total +=  ($price) * $item["quantity"];
+    };
+    return ($total/100);
 }
 ?>
 

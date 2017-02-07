@@ -24,10 +24,10 @@ if (isset($_POST["cart"])) {
 					$itemInCart["name"] == $item["name"] &&
 						$itemInCart["choice"] == $item["choice"]
 				) {
-					print_r($_SESSION["cart"]);
+					//print_r($_SESSION["cart"]);
 					$_SESSION["cart"][$i]["quantity"] += $item["quantity"];
 					$addToCart = False;
-					print "<p>already exists. updating quantity</p>";
+					//print "<p>already exists. updating quantity</p>";
 					break;
 				} 
 			}
@@ -83,7 +83,7 @@ if (isset($_GET["go"])) {
 		
 		case "checkout":
 		include(M . "model.php");
-		$total = number_format(getCartTotal($xml), 2);
+		$total = getCartTotal();
 		include(V . "checkout.php");
 		exit;
 		break;
